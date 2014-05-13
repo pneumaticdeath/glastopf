@@ -144,4 +144,16 @@
     <patternString><![CDATA[^/info.php|^/phpinfo.php|^/phpinfo.html]]></patternString>
     <module>phpinfo</module>
   </request>
+  <request>
+    <id>24</id>
+    <patternDescription>Serve static content</patternDescription>
+    <patternString><![CDATA[^/(|[^/]*\.html)$]]></patternString>
+    <module>static</module>
+  </request>
+  <request>
+    <id>25</id>
+    <patternDescription>Serve images</patternDescription>
+    <patternString><![CDATA[^/images/[^/]*\.jpg$]]></patternString>
+    <module>images</module>
+  </request>
 </requests>
